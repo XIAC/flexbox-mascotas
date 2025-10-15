@@ -5,11 +5,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="estilo.css" rel="stylesheet"/>
+    <script>
+        document.write("<h1 style='color:red'>holaaa</h1>");
+        let A = 10;
+        /* let a = 10;*/
+        var edad = 10;
+        if (edad > 23){
+                document.write("<h2 style='color:blue'>Es mayor</h2");
+        } else {
+                document.write("<h2 style='color:green'>Es menor</h2");
+        }
+         
+        function ejVar(){
+            if (true) {
+                var y = 10;
+            }
+            console.log(y);
+        }
+        function ejLet(){
+            if (true) {
+                let y = 10;
+            }
+            const zTest= 100;
+            // console.log(y);
+            //zTest = 500;
+            console.log(zTest);
+
+        }
+        // ejVar();
+        // ejLet();
+        //OPERADORES ARITMETICOS
+        // let num1 = Number(window.prompt("Ingrese  numero 1"));
+        // let num2 = Number(window.prompt("Ingrese  numero 2"));
+         let num1 = 10;
+        let num2 = 5;
+        document.write("La suma de los numeros es :");
+         console.log(num1 + num2);
+        // document.write("La suma de los números es = " + (num1 + num2));
+        document.write("<br>");
+        document.write("La resta es:"+  (num1 - num2));
+              document.write("<br>");
+        document.write("La multiplicacion es:"+  (num1 * num2));
+              document.write("<br>");
+        document.write("La division es:"+  (num1 / num2));
+        //OPERADORES COMPARACION
+        document.write("Operadores de comparacion");
+
+        document.write("<br>");
+        document.write(num1 == num2);
+        document.write("<br>");
+        document.write(num1 >= num2);
+        document.write("<br>");
+        document.write(num1 <= num2);
+        document.write("<br>");
+        document.write(num1 > num2);
+        document.write("<br>");
+        document.write("Operadores logicos");
+    document.write("<br>");
+        let a = 1;
+        let b = 20;
+        let c= 22;
+        let d = 4;
+        document.write( (a < b)  && (c < d));
+        document.write("<br>");
+                            //V   &&  F = F
+        document.write( (a < b)  || (c < d));
+        document.write("<br>");
+        // v & v = V
+        //V & F = F
+        //F & V = F
+        // F& F= F
+        document.write("Operadores asignacion");
+        let x = 30;
+        // x+= 5;
+        // x-= 5;
+        //  x*= 5;
+        x/= 5;
+        document.write(x);
+        document.write("Operadores condicional ");
+          document.write("<br>");
+        let d1 = 10;
+        let f1 = 20; 
+        let resultado = (d1 > f1) ? "Si, es mayor" : "No, no es mayor";
+        document.write(resultado);
+          document.write("<br>");
+          document.write("--------------------------");
+          document.write("<br>");
+
+        let resultado2 = "";
+        if (d1 > f1) {
+            resultado2 = "Si, es mayor";
+        } else {
+            resultado2 = "No, no es mayor";
+        }
+         document.write(resultado2);
+          document.write("<br>");
+
+        // if (d1 > f1){
+
+        // } else if( d1 > x) {
+
+        // } else if (d......)
+    // swith
+        switch(3){
+            case 1: 
+                document.write("es 1");
+                break;
+            case 2: 
+            document.write("es 2");
+            break;
+            case 3: 
+            document.write("es 3");
+            break;
+            case 4: 
+            document.write("es 4");
+            break;
+            default:
+                document.write("NO es ninguno");
+        }
+document.write("<br>");
+document.write("<br>");
+        // Escribir un programa JS para obtener un carácter del usuario para verificar si es vocal o consonante
+        // let caracter = window.prompt("Ingrese un valor");
+         let caracter = "B";
+        switch(caracter){
+            case 'a': 
+                document.write("es VOCAL");
+                break;
+            case 'e': 
+            document.write("es VOCAL");
+            break;
+            case 'i': 
+            document.write("es VOCAL");
+            break;
+            case 'o': 
+            document.write("es VOCAL");
+            break;
+            case 'u': 
+            document.write("es VOCAL");
+            break;
+            default:
+                document.write("Es CONSONANTE");
+        }
+
+    document.write("<br>");
+    let mayorEdad = Number (window.prompt("Ingrese su edad"));
+    let resultadoEdad = (mayorEdad >= 18) ? document.write("Puede Conducir"):document.write("No es apto para conduccion") ;
+    // Bucles
+        document.write("<br>");
+    for ( let i = 10; i>=1 ; i--) {
+        document.write(i +"<br/>");
+    }
+    // for in
+    let estudiante = {
+        nombre: "Javier",
+        apellido:"Perez",
+        contacto: 1231323
+    };
+    console.log(estudiante);
+    for ( let est in estudiante){
+        document.write(est+":");
+        // document.write("<br/>");
+        document.write(estudiante[est] + "<br/>");
+    }
+    let colores = ['rojo', 'verde','azul'];
+    // for of
+    for (let c of colores) {
+        document.write(c+ "<br/>");
+    }
+    let nombre = "Javier";
+    for (let n of nombre) {
+        document.write(n+ "<br/>");
+    }
+    </script>
 </head>
 <body>
-    <div class="contenedor">
+    <!-- <div class="contenedor">
         <div class="caja">
-            <p>A</p>
+            <p>A 123</p>
         </div>
         <div class="caja">
             <p>B</p>
@@ -26,6 +199,6 @@
         <div class="caja">
             <p>F</p>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
