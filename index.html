@@ -149,7 +149,8 @@ document.write("<br>");
         }
 
     document.write("<br>");
-    let mayorEdad = Number (window.prompt("Ingrese su edad"));
+    // let mayorEdad = Number (window.prompt("Ingrese su edad"));
+        let mayorEdad = 18;
     let resultadoEdad = (mayorEdad >= 18) ? document.write("Puede Conducir"):document.write("No es apto para conduccion") ;
     // Bucles
         document.write("<br>");
@@ -177,6 +178,44 @@ document.write("<br>");
     for (let n of nombre) {
         document.write(n+ "<br/>");
     }
+
+    let numero = 0;
+     while (numero <= 10) {
+        document.write(numero+ "<br/>");
+        numero++;
+     }
+      document.write("Do while");
+    let numero2 = 10;
+    do {
+         document.write(numero2+ "<br/>");
+         numero2--;
+    } while(numero2 >= 0);
+
+    function imprimir(dia, numero){
+         document.write("Esto es una funcion");
+         document.write(numero + "<br/>");
+         document.write(dia);
+    }
+
+
+    imprimir("lunes", 1);
+
+    let gato1 = {
+        peso: '10K',
+        color:'naranja',
+        tamanio: 80
+    }
+    let gato2 = {
+        peso: '5K',
+        color:'negro',
+        tamanio: 100, 
+        dormir: function () {
+            return "estoy durmiendo";
+        }
+    }
+    console.log(gato1);
+    console.log(gato2);
+
     </script>
 </head>
 <body>
